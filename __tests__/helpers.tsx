@@ -2,8 +2,9 @@ import React from 'react';
 import { Text } from 'react-native'
 import { render } from '@testing-library/react-native';
 import { ThemeContext } from '../components/Theme';
-import { MonoPurpleLightTheme as theme } from '../themes';
+import { MonoPurpleLightTheme } from '../themes';
 
+export const theme = MonoPurpleLightTheme;
 
 export const renderWithTheme = (Component: React.ReactElement) => {
     return render(
@@ -12,6 +13,7 @@ export const renderWithTheme = (Component: React.ReactElement) => {
         </ThemeContext.Provider>
     )
 }
+
 
 it('renders with theme', () => {
     const text = 'Testing'

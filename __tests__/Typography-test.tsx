@@ -2,8 +2,7 @@ import React from 'react';
 import '@testing-library/jest-native/extend-expect';
 import { View } from 'react-native';
 import { Typography } from '../components/Theme/Typography';
-import { MonoPurpleLightTheme as theme } from '../themes';
-import { renderWithTheme } from './global-test';
+import { renderWithTheme, theme } from './helpers';
 
 it('renders text', () => {
     const text = 'Hello!';
